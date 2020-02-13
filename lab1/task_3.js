@@ -44,6 +44,8 @@ const ifPer = (l) => {
 // console.log(ifPer(l));
 
 
+// fib_iter_list(x) gives a list of Fibanocci numbers
+///////////////////
 last1 = fib_iter_list(1000).map( el => el % 10n);
 last2 = fib_iter_list(3000).map( el => el % 100n);
 last3 = fib_iter_list(10000).map( el => el % 1000n);
