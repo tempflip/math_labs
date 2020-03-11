@@ -25,7 +25,8 @@ const coin_combinations = (N) => {
 * comments:
 * sc => current score (heads in the row)
 * scMax => current maximum score
-* when a tail comes (0) than we save the current score to the scMax and reset the score
+* when a tail comes (0) than we save the current score to the scMax 
+* and reset the score
 */
 const score = (c) => {
 	var scMax = 0;
@@ -58,8 +59,8 @@ combinations.forEach(comb => {
 	P[sc] = P[sc] + 1;
 });
 
-for (k in P) {
-	P[k] = P[k] / combinations.length;
-}
+// for (k in P) {
+// 	P[k] = P[k] / combinations.length;
+// }
 
 console.log(P);
