@@ -64,3 +64,4 @@ combinations.forEach(comb => {
 // }
 
 console.log(P);
+console.log(combinations.length)
