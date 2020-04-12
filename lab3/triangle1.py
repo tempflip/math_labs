@@ -17,6 +17,7 @@ def pascal_iter(n):
 
 	return triangle
 
+# recursive pascal triangle
 def pascal_req(n):
 	if n == 1: return [[1]]
 	
