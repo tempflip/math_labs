@@ -49,3 +49,8 @@ def print_pretty(triangle):
 print_pretty(pascal_iter(8))
 print_pretty(pascal_req(8))
 
+## summing up and comparing with the powers of 2
+for i, row in enumerate(pascal_req(12)):
+	print (i, ':', sum(row), pow(2, i))
+
+

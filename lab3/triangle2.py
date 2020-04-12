@@ -22,6 +22,13 @@ def trinominal(n): # iterative implementation
 
 t5 = trinominal(5)
 
+## printing the rows of the triangle
 for el in t5:
 	print(el)
+
+## summing up and comparing with the powers of 3
+for i, row in enumerate(trinominal(12)):
+	print (i, ':', sum(row), pow(3, i))
+
+
 
