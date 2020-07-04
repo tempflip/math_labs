@@ -40,7 +40,27 @@ def get_seqs(l = 2):
 
 
 
-my_seqs = get_seqs(2)
-for s in my_seqs:
-	if 7 in seq_sums(s):
-		print(s, seq_sums(s))
+# my_seqs = get_seqs(2)
+# for s in my_seqs:
+# 	if 7 in seq_sums(s):
+# 		print(s, seq_sums(s))
+
+
+prob = 0
+for i in range(1, 8):
+	my_seqs = get_seqs(i)
+
+	winning_seqs = [seq for seq in my_seqs if 7 in seq_sums(seq) and len(seq) == i]
+
+	p = len(winning_seqs) / len(my_seqs)
+	prob += p
+	print ('Roll no. ', i)
+	print ('All possible roll sequences: ', len(my_seqs))
+	print ('All winning roll sequences: ', len(winning_seqs))
+	print ('Probability to win in this roll: ', p)
+	print ('All probability to win: ', prob)
+	print('....................................')
+
+
+
+
