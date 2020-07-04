@@ -16,7 +16,7 @@ def get_orders(drinks = 3, people = 4):
 
 
 print ('If order do matter number of possible orders (simple repetition):')
-print (len(get_orders(3,4)))
+print (len(get_orders(5,100)))
 print ('If order doesnt matter number of possible orders (combination with repetetion):')
 print(len(set([tuple(sorted(o)) for o in get_orders(3,4)])))
 
