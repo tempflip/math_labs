@@ -40,7 +40,7 @@ def get_seqs(l = 2):
 
 
 
-my_seqs = get_seqs(3)
+my_seqs = get_seqs(2)
 for s in my_seqs:
 	if 7 in seq_sums(s):
 		print(s, seq_sums(s))
