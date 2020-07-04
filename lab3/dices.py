@@ -1,4 +1,4 @@
-# return a list of all possible rolls with 2 dices
+# returns a list of all possible rolls with 2 dices
 # example
 # [(1, 1), (1,2), (1,3)......(6,6)]
 def all_rolls():
@@ -8,6 +8,7 @@ def all_rolls():
 			r.append((i,j))
 	return r
 
+# returns all possible sums which can made up from a given roll sequence
 def seq_sums(seq):
 	if len(seq) == 1 : 
 		return set([seq[0][0], seq[0][1], seq[0][0] + seq[0][1]])
@@ -20,13 +21,13 @@ def seq_sums(seq):
 		return set(r)
 
 
+# returns roll sequences which are maximum l long
 def get_seqs(l = 2):
 	if l == 1: 
 		return [[roll] for roll in all_rolls()]
 	else:
 		seqs = []
 		for seq in get_seqs(l = l-1):
-			# print (seq)
 			if seq[-1][0] != seq[-1][1]:
 				seqs.append(seq)
 			else :
